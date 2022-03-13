@@ -42,19 +42,19 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         alert("Please enter valid information for each field.")
     } else if (fuelLevel < 10000 && cargoLevel > 10000) {
         document.querySelector("#launchStatus").innerHTML = "Shuttle Not Ready for Launch"
-        document.querySelector("#launchStatus").style.color = "rgb(199, 37, 78"
+        document.querySelector("#launchStatus").style.color = "rgb(199, 37, 78)"
         list.style.visibility = "visible"
         document.querySelector("#fuelStatus").innerHTML = "Fuel level too low for launch"
         document.querySelector("#cargoStatus").innerHTML = "Cargo mass too heavy for launch"
     } else if (fuelLevel < 10000 ) {
         document.querySelector("#launchStatus").innerHTML = "Shuttle Not Ready for Launch"
-        document.querySelector("#launchStatus").style.color = "rgb(199, 37, 78"
+        document.querySelector("#launchStatus").style.color = "rgb(199, 37, 78)"
         list.style.visibility = "visible"
         document.querySelector("#fuelStatus").innerHTML = "Fuel level too low for launch"
         document.querySelector("#cargoStatus").innerHTML = "Cargo mass low enough for launch"
     } else if (cargoLevel > 10000) {
         document.querySelector("#launchStatus").innerHTML = "Shuttle Not Ready for Launch"
-        document.querySelector("#launchStatus").style.color = "rgb(199, 37, 78"
+        document.querySelector("#launchStatus").style.color = "rgb(199, 37, 78)"
         list.style.visibility = "visible"
         document.querySelector("#fuelStatus").innerHTML = "Fuel level high enough for launch"
         document.querySelector("#cargoStatus").innerHTML = "Cargo mass too heavy for launch"
