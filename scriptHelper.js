@@ -31,6 +31,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     let fuelValidation = validateInput(fuelLevel);
     let cargoValidation = validateInput(cargoLevel);
 
+    list.style.visibility = "hidden"
     document.querySelector("#pilotStatus").innerHTML = `Pilot ${pilot} is ready for launch`
     document.querySelector("#copilotStatus").innerHTML = `Co-pilot ${copilot} is ready for launch`
 
