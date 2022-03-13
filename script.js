@@ -13,8 +13,9 @@ window.addEventListener("load", function() {
        addDestinationInfo(window.document, planetSelection.name, planetSelection.diameter, planetSelection.star, planetSelection.distance, planetSelection.moons, planetSelection.image)
     });
 
+   let list = document.getElementById("faultyItems");
    list.style.visibility = "hidden"
-   
+
    let form = document.querySelector("form");
 
    form.addEventListener("submit", function(event) {
